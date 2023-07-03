@@ -1,0 +1,9 @@
+# Create virtual env and activate it.
+virtualenv venv
+source venv/bin/activate
+
+# Install required libraries.
+pip3 install cmake && pip3 install dlib && pip3 install face_recognition opencv-python numpy
+
+# Run code.
+python code.py
