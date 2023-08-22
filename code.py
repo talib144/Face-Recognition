@@ -5,19 +5,19 @@ import numpy as np
 
 video_capture = cv2.VideoCapture(0)
 
-adnan_image = face_recognition.load_image_file("./pics/adnan.jpeg")
-adnan_face_encoding = face_recognition.face_encodings(adnan_image)[0]
+adnan_image = face_recognition.load_image_file("./pics/talib1.jpeg")
+adnan_face_encoding = face_recognition.face_encodings(talib1_image)[0]
 
-hammad_image = face_recognition.load_image_file("./pics/hammad.jpg")
-hammad_face_encoding = face_recognition.face_encodings(hammad_image)[0]
+hammad_image = face_recognition.load_image_file("./pics/talib2.jpg")
+hammad_face_encoding = face_recognition.face_encodings(talib2_image)[0]
 
 known_face_encodings = [
-    adnan_face_encoding,
-    hammad_face_encoding
+    talib1_face_encoding,
+    talib2_face_encoding
 ]
 known_face_names = [
-    ["Adnan", "26", "Rawalpindi"],
-    ["Hammad", "21", "Rawalpindi"],
+    ["Talib", "22", "ISB"],
+  
 ]
 
 face_locations = []
